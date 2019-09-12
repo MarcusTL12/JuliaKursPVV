@@ -21,5 +21,8 @@ reallyslowfunction() = sleep(2)
     sleep(1)
 end
 
-
+# The @inbounds macro removes all checks to see if you try to acces elements
+# outside any container, so might be faster, but definately more unsafe.
+a = [1, 2, 3]
+@inbounds println(a[2])
 

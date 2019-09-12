@@ -56,7 +56,7 @@ println(s)
 println("a + b = ", a + b)
 
 
-# The raw string macro is very useful when copying raw text and not
+# The "raw" string macro is very useful when copying raw text and not
 # wanting to worry about special characters doing special stuff
 # (i.e. \n for new line). A common use for this is filepaths
 
