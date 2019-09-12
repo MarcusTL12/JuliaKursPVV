@@ -1,5 +1,5 @@
 # The global scope in julia behaves weirdly. This section shows how to
-# cicumvent the issues that arise, but the bottom line here should be
+# circumvent the issues that arise, but the bottom line here should be
 # to avoid the global scope as much as humanly possible.
 # Changing globals require ugly explicit syntax, globals cannot be
 # strongly typed, and, in general, globals are significantly slower

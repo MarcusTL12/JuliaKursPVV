@@ -1,5 +1,5 @@
 
-# User defined types are made with the struct keyword. Member variables are
+# User-defined types are made with the struct keyword. Member variables are
 # listed in the struct body as follows.
 # Keep in mind that julia does not support redefining of types by default,
 # so whenever you change anything in the struct (field names/types, etc.)
@@ -156,7 +156,7 @@ import Base.*
 
 # Multiplication between different types might also be useful
 *(x::T, p::Polar{T}) where T = Polar(x * p.r, p.θ)
-# Implementing the reverse mulitplication such that it becomes commutative
+# Implementing the reverse multiplication such that it becomes commutative
 *(p::Polar{T}, x::T) where T = x * p
 
 p1 = Polar(2.0, 15.0)

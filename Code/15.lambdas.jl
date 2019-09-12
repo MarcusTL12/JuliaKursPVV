@@ -4,7 +4,7 @@
 f = x -> 2x^2
 @show f(2)
 
-# If the function takes more then one argument, parenthesis are required
+# If the function takes more then one argument, parentheses are required
 g = (x, y) -> x * y
 @show g(2, 3)
 
