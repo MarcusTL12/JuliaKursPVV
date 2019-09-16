@@ -1,8 +1,8 @@
 
-Therer are a lot of different useful packages for julia. All official
+There are a lot of different useful packages for julia. All official
 Packages can be found at https://juliaobserver.com/packages (I think)
 
-Here are a couple of good packages i use a lot.
+Here are a couple of good packages I use a lot.
 
 IJulia:
 This package is required for using Julia in jupyter.
@@ -18,29 +18,29 @@ Plots:
 Creates nice plots. Has support for multiple backends (including pyplot).
 
 PyCall:
-makes it possible to import python packages into julia and write python code
+Makes it possible to import python packages into julia and write python code
 in julia files. Anytime there exists a useful python package and no julia
-equivalent, this package saves lives.
+equivalent, this package will save lives.
 
 Primes:
 I do not know what magic they put into making this package, but I have never
-seen a so fast funtion for checking if a number is prime ever.
+seen such a fast funtion for checking if a number is prime, ever.
 The package is useful for working with prime numbers.
 
 Memoize:
 A useful package for automatically memoizing a function. For people taking
-algorithms and datastructures, this will make more sence later in the course.
+algorithms and datastructures, this will make more sense later in the course.
 
 Images:
-Useful to handle images. Terrible slow to load the package, but once loaded
+Useful to handle images. Terribly slow to load the package, but once loaded
 it is quite fast and very featureful.
 
 SymPy:
-A wrapper for pythons sympy package which is arguably much better than
+A wrapper for pythons SymPy package which is arguably much better than
 sympy itself.
 
 Printf:
-Wrapper for the C- printf style functions for fast string formating.
+Wrapper for the C++ printf style functions for fast string formating.
 
 CSV:
 Package for reading/writing .csv (comma seperated values) files.
