@@ -42,7 +42,7 @@ a = parse(Float64, s)
 @show a
 
 
-# Easy inline string formating can be done with the $ (eval) symbol
+# Easy inline string formatting can be done with the $ (eval) symbol
 a, b = 3, 5
 
 s = "a, b = $a, $b" # generates string "a, b = 3, 5"
@@ -51,8 +51,8 @@ println(s)
 s = "a + b = $(a + b)" # "a + b = 8"
 println(s)
 
-# However it is usually faster (performance wise) to just pass in
-# multiple arguments to f.exs. println
+# However it is usually faster (performance-wise) to just pass in
+# multiple arguments to f.ex. println
 println("a + b = ", a + b)
 
 
@@ -78,7 +78,7 @@ println(s)
 
 # To get input from the console this can be done with the readline() function
 # However getting console input when running in vscode with F5/shift+enter
-# seems to crash for some reason, so avoid console input if thats how you
+# seems to crash for some reason, so avoid console input if that''s how you
 # run the program
 # s = readline()
 # println(s)

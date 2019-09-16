@@ -3,7 +3,7 @@
 # more the way modern c++ does it
 
 # Dicts are usually created from an array of "Pair" types (First => Last)
-# The type of the dict keys and values are automatically infered.
+# The type of the dict keys and values are automatically inferred.
 d = Dict([
     "foo" => 3,
     "bar" => 7
@@ -27,7 +27,7 @@ push!(d, "foo" => 1//2)
 push!(d, "bar" => 22//7)
 display(d)
 
-# The problem above can be mitigated by infering the types manually
+# The problem above can be mitigated by inferring the types manually
 d = Dict{String, Rational{Int}}()
 push!(d, "foo" => 1//2)
 push!(d, "bar" => 22//7)

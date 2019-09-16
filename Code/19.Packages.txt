@@ -40,10 +40,10 @@ A wrapper for pythons SymPy package which is arguably much better than
 sympy itself.
 
 Printf:
-Wrapper for the C++ printf style functions for fast string formating.
+Wrapper for the C- printf style functions for fast string formatting.
 
 CSV:
-Package for reading/writing .csv (comma seperated values) files.
+Package for reading/writing .csv (comma-separated values) files.
 
 JSON:
 Package for reading/writing .json files.

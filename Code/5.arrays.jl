@@ -58,7 +58,7 @@ l = Array{Int, 1}(undef, 100) # Creating a 1d array of 100 undefined elements
 # when working with 1d arrays it is usually better to use the alias Vector
 # for 1d array. Vector{T} is an alias for Array{T, 1}
 
-l = Vector{Int}(undef, 100) # Does the exactly the same as line above
+l = Vector{Int}(undef, 100) # Does exactly the same as the line above
 
 # however it is usually cleaner and safer to use the function zeros() or
 # ones() to initialize the memory.
@@ -106,7 +106,7 @@ l = [x * y for y in 1 : 3, x in 1 : 4]
 display(l)
 
 # It is possible to view an array through a wrapper, making it differently
-# organized without copying data, f.exs. the transpose of a matrix or
+# organized without copying data, f.ex. the transpose of a matrix or
 # viewing a multidimensional array as the raw memory as a 1d array.
 # There are many different types of views in multiple different packages.
 # search the documentation to see more
@@ -119,7 +119,7 @@ l2 = PermutedDimsArray(l, (2, 1)) # flips x and y dimensions
 display(l2)
 
 
-# Random numbers can be created in many different ways. Here are a fiew
+# Random numbers can be created in many different ways. Here are a few
 # easy ones.
 
 a = rand(Int64) # Create a random Int64

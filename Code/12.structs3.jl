@@ -36,7 +36,7 @@ end
 # and makes it possible to pass a LinkedList into a function that is specified
 # to take in objects of type AbstractArray. This gives a bunch of functions
 # that needs to be implemented, and some that can be overridden. All of these
-# are listed under the "Intefaces" section in the julia docs.
+# are listed under the "Interfaces" section in the julia docs.
 # Here we will implement the required methods and the methods for iteration.
 mutable struct LinkedList{T} <: AbstractArray{T, 1}
     head::Node{T}
@@ -59,7 +59,7 @@ function LinkedList(elems::AbstractArray{T}) where T
 end
 
 
-# Not required for AbstractArray, but makes sence to implement
+# Not required for AbstractArray, but makes sense to implement
 function Base.push!(l::LinkedList{T}, v::T) where T
     n_node = make_node(v, nothing, nothing)
     
@@ -75,7 +75,7 @@ function Base.push!(l::LinkedList{T}, v::T) where T
     l
 end
 
-# One of the reqired functions for AbstractArray. size returns a tuple
+# One of the required functions for AbstractArray. size returns a tuple
 # of all the dimensions, but this is a 1d collection so it only contains
 # one element.
 Base.size(l::LinkedList) = (l.items, )
@@ -129,7 +129,7 @@ end
 # with the syntax l[i]
 Base.getindex(l::LinkedList, i::Int) = findnode(l, i).data
 
-# The complimentary function for seting elements at a given index
+# The complimentary function for setting elements at a given index
 # with corresponding syntax l[i] = v
 Base.setindex!(l::LinkedList{T}, v::T, i::Int) where T = findnode(l, i).data = v
 
